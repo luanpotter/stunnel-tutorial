@@ -23,7 +23,7 @@ There are a few scripts to be called on this folder:
 * [receiver.sh](receiver.sh) - actually runs the receiver container, leaves it runnings and returns the local ip associated in the network, but doesn't fire off the `receive.sh` process
 * [sender.sh](sender.sh) - again, just runs the sender, doesn't fire off the actual `send.sh` process (but returns the ip)
 * [run.sh](run.sh) - calls setup, receiver and sender, saving the ips, then docker exec's into both receiver and senders and kick the process off; after that, it tailf's the output file in the host to see the netcat working
-* [min.sh](min.sh) - runs the man in the middle; run once the run script is running and you will be able to see everything, plain-text!
+* [mitm.sh](mitm.sh) - runs the man in the middle; run once the run script is running and you will be able to see everything, plain-text!
 
 ## stunnel
 

@@ -13,4 +13,4 @@ echo "send_ip: $send_ip"
 docker exec -d st-receiver bash -c "/root/secure_receive.sh $port"
 docker exec -d st-sender bash -c "/root/secure_send.sh $rec_ip $port"
 
-# tail -f logs/results
+tail -f logs/results
