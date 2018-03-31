@@ -36,3 +36,8 @@ The following chart explains it in other words:
 To use these, the scripts `secure_send.sh` and `secure_receive.sh` inside de dockers are run. A public/private key pair in the keys folder is used for encryption (please generate your own, don't use mine), and also the stunnel config files are copyed to the machines.
 
 You can use the [secure_run.sh](secure_run.sh) to play it. Now, when you run the Man in the Middle, you will see the data is indeed encrypted!
+
+
+## references
+
+I used a lot of different tutorials and guides out there; the stunnel documentation, a lot of random stuff about docker and network bridges, but mostly I used [Secure Communications Over a Network, by Geoff Vaughan](http://mrvaughan.com/wp-content/uploads/2012/09/SecureSoftwareLab2.pdf).
